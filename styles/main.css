@@ -10,6 +10,33 @@ i {
     font-size: 30px;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 80px;
+    color: cyan;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 25%;
+}
+
 #foto-perfil {
     border-radius: 100%;
 }
@@ -27,3 +54,14 @@ i {
     background-color: transparent;
     text-transform: uppercase;
 }
+
+#banner {
+    background-color: #d44b4b;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
