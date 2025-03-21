@@ -1,8 +1,19 @@
+:root {
+    --primary-color: #d44b4b;
+    --font-color: #000;
+    --background-color: #fff
+}
+
 * {
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--font-color);
+    background-color: (--background-color);
 }
 
 
@@ -15,11 +26,13 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    margin: 3rem;
 }
 
 header h1 {
     font-size: 80px;
-    color: cyan;
+    color: var(--primary-color);
     margin: 0;
 }
 
@@ -37,14 +50,25 @@ section {
     width: 25%;
 }
 
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 #foto-perfil {
     border-radius: 100%;
+    width: 100%;
+    max-width: 250px;
+    /* position: relative;
+    top: -25%; */
+
 }
 
 .redes-sociais {
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-top: 2rem;
 }
 
 #contate {
@@ -53,6 +77,7 @@ section {
     border-radius: 50px;
     background-color: transparent;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
 
 #banner {
@@ -63,5 +88,59 @@ section {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    color: var(--background-color);
+    width: 31%;
 }
+
+#banner h2 {
+    text-align: center;
+    /* margin-top: 5rem; */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.tituloLinha {
+    font-weight: 700;
+}
+
+footer{
+    background-color: gray;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* Responsividade para telas menores */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+    }
+
+    #banner {
+        width: 100%;
+    }
+    
+}
+
 
